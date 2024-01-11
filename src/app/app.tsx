@@ -2,15 +2,12 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { RouterProvider } from "@tanstack/router";
 
-
-import { router } from "../routes";
-import { TanStackRouterDevelopmentTools } from "../utils/dev-tools/react-router-development-tools";
-
-import type { FunctionComponent } from "../common/types";
+import { router } from "@/routes";
+import { TanStackRouterDevelopmentTools } from "@/utils/dev-tools/react-router-development-tools";
 
 const queryClient = new QueryClient();
 
-const App = (): FunctionComponent => {
+const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <RouterProvider router={router} />
