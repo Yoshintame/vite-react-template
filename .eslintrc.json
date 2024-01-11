@@ -19,6 +19,8 @@
   "overrides": [],
   "ignorePatterns": [
     ".eslintrc.json",
+    "tsconfig.json",
+    "tsconfig.node.json",
     "vite.config.ts",
     "postcss.config.mjs",
     "tailwind.config.js",
